@@ -11288,7 +11288,7 @@ function $LocationProvider() {
       LocationMode = $sniffer.history ? LocationHtml5Url : LocationHashbangInHtml5Url;
     } else {
       appBase = stripHash(initialUrl);
-      LocationMode = LocationHashbangUrl;
+      LocationMode = LocationHashbangInHtml5Url;
     }
     $location = new LocationMode(appBase, '#' + hashPrefix);
     $location.$$parseLinkUrl(initialUrl, initialUrl);
